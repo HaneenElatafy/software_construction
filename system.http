@@ -1,0 +1,28 @@
+GET http://localhost:5107/games 
+###
+GET http://localhost:5107/games/2
+
+###
+POST http://localhost:5107/games
+Content-Type:application/json
+
+
+
+{
+   "name" :"minecraft",
+   "genre":"kids and family",
+   "price":20,
+   "releaseDate":"2011-11-18"
+}
+###
+PUT http://localhost:5107/games/2
+Content-Type: application/json
+
+
+{   "name":" fifa 25",
+    "genre": "sports",
+    "price": 69.99,
+    "releaseDate": "2023-03-11" 
+}
+###
+DELETE http://localhost:5107/games/
